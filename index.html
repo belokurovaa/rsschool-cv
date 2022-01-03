@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>CV</title>
+
+   <link rel="stylesheet" href="style.css">
+   <link rel="icon" href="assets/img/fav.ico">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+   <header class="header">
+      <div class="container">
+         <div class="header__container">
+            <div class="header__photo">
+               <img src="assets/img/my-photo.jpg" alt="photo" class="header__image">
+            </div>
+            <div class="header__content">
+               <nav class="nav">
+                  <ul class="nav-list">
+                     <li class="nav-item">
+                        <a href="#about" class="nav__link">About</a>
+                     </li>
+                     <li class="nav-item">
+                        <a href="#education" class="nav__link">Education</a>
+                     </li>
+                     <li class="nav-item">
+                        <a href="#skills" class="nav__link">Skills</a>
+                     </li>
+                     <li class="nav-item">
+                        <a href="#code" class="nav__link">Code</a>
+                     </li>
+                     <li class="nav-item">
+                        <a href="#contacts" class="nav__link">Contacts</a>
+                     </li>
+                  </ul>
+               </nav>
+               <div class="header__info">
+                  <h1 class="header__title">
+                     Olena Dorfman
+                  </h1>
+                  <h2 class="header__subtitle">
+                     Hope to be front-end developer
+                  </h2>
+               </div>
+            </div>
+         </div>
+      </div>
+   </header>
+   <div class="main-content">
+      <div class="container">
+         <div class="main-container">
+            <aside class="aside">
+               <section class="education" id="education">
+                  <h3 class="section-title">
+                     Education
+                  </h3>
+                  <div class="divider divider_indigo"></div>
+                  <div class="education__title">
+                     Kyiv State National University
+                  </div>
+                  <div class="divider divider_indigo"></div>
+                  <div class="education__title">
+                     Udemy
+                  </div>
+                  <div class="divider divider_indigo"></div>
+                  <div class="education__title">
+                     <a href="https://app.rs.school/cv/belokurovaa" class="side__link" alt="JS/FE Pre-School 2022 in
+                     process"></a>
+                  </div>
+               </section>
+               <section class="skills" id="skills">
+                  <h3 class="section-title">
+                     Skills
+                  </h3>
+                  <div class="divider divider_indigo"></div>
+                  <ul class="skills__list">
+                     <li class="skills__item skills__html">HTML</li>
+                     <li class="skills__item skills__css">CSS</li>
+                     <li class="skills__item skills__github">GitHub</li>
+                     <li class="skills__item skills__figma">Figma</li>
+                  </ul>
+               </section>
+            </aside>
+            <main class="main">
+               <section class="main__about" id="about">
+                  <h3 class="section-title">
+                     About me
+                  </h3>
+                  <div class="divider divider_indigo"></div>
+                  <div class="main__descr">
+                     I'm a switcher. My dream is to become a front-end developer. I hope it will come true with RS
+                     School's help.
+                  </div>
+                  <article class="about-strengths">
+                     <h4 class="main__subheader">
+                        My strengths:
+                     </h4>
+                     <ul class="main__list">
+                        <li class="main__item">Perseverance</li>
+                        <li class="main__item">Analitic mind</li>
+                        <li class="main__item">Quick learnerPerseverance</li>
+                        <li class="main__item">Big experience in solving problems and working in a team</li>
+                     </ul>
+                  </article>
+                  <article class="languages">
+                     <h4 class="main__subheader">
+                        Languages:
+                     </h4>
+                     <ul class="main__list">
+                        <li class="main__item">Ukrainian, Russian - native speaker</li>
+                        <li class="main__item">English - B2</li>
+                     </ul>
+                  </article>
+
+               </section>
+               <section class="code-example" id="code">
+                  <h3 class="section-title">
+                     Code example
+                  </h3>
+                  <div class="divider divider_black"></div>
+                  <pre class="pre">
+                      <code class="code">
+         function calculateWork() {
+
+            const values = getFormValues();
+         
+            let totalPrice = 0;
+            
+            const workTypes = prices[values.websiteType];
+         
+            if (values.session) {
+                  totalPrice = workTypes.session;
+            }
+            const totalPriceEl = document.querySelector('#total-Price');
+
+            totalPriceEl.textContent = totalPrice; 
+         }        
+  
+                      </code>
+                  </pre>
+               </section>
+
+            </main>
+         </div>
+      </div>
+   </div>
+   <footer class="footer">
+      <div class="container">
+         <div class="footer__container">
+            <section class="contacts" id="contacts">
+               <h3 class="section-title">
+                  Contacts
+               </h3>
+               <div class="divider divider_indigo"></div>
+               <ul class="contacts__list">
+                  <li class="contacts__item">
+                     <a href="tel:+375299879647" class="side__link" target="_blank">+380509380305</a>
+                  </li>
+                  <li class="contacts__item">
+                     <a href="mailto:belokurovaa@gmail.com" class="side__link" target="_blank">E-mail</a>
+                  </li>
+                  <li class="contacts__item">
+                     <a href="https://t.me/olena_belokurova" class="side__link" target="_blank">Telegram</a>
+                  </li>
+               </ul>
+            </section>
+            <div class="footer__content">
+               <div class="footer__item">
+                  <a href="https://github.com/belokurovaa" target="_blank">
+                     <img src="assets/svg/github.svg" alt="github_icon" class="footer__image">
+                  </a>
+               </div>
+               <div class="footer__item">
+                  <a href="https://rs.school/js/" target="_blank">
+                     <img src="assets/svg/rs_school_js.svg" alt="rs-school-logo" class="footer__image">
+                  </a>
+               </div>
+
+            </div>
+         </div>
+      </div>
+   </footer>
+</body>
+
+</html>
