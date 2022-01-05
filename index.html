@@ -11,8 +11,15 @@
    <link rel="icon" href="assets/img/fav.ico">
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
 
+
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Crimson+Pro:wght@200&display=swap"
+      rel="stylesheet">
 </head>
 
 <body>
@@ -58,33 +65,52 @@
       <div class="container">
          <div class="main-container">
             <aside class="aside">
-               <section class="education" id="education">
+               <section class="contacts" id="contacts">
+                  <h3 class="section-title">
+                     Contacts
+                  </h3>
+                  <div class="divider_divider_indigo"></div>
+
+                  <a href="tel:+380509380305" target="_blank"><img src="./assets/svg/phone-icon.svg"
+                        class="phone-link-icon" alt="phone-link-icon">+380509380305</a>
+
+                  <a href="mailto:belokurovaa@gmail.com" target="_blank">
+                     <img src="./assets/svg/mdi_email.svg" class="mail-link-icon"
+                        alt="mail-link-icon">belokurovaa@gmail.com</a>
+
+                  <a href="https://t.me/olena_belokurova" target="_blank">
+                     <img src="./assets/svg/telegram-icon.svg" class="telegram-link-icon" alt="telegram-link-icon">
+                     Telegram</a>
+
+               </section>
+
+
+
+               <section class="education-selection" id="education-selection">
                   <h3 class="section-title">
                      Education
                   </h3>
-                  <div class="divider divider_indigo"></div>
-                  <div class="education__title">
-                     Kyiv State National University
-                  </div>
-                  <div class="divider divider_indigo"></div>
-                  <div class="education__title">
-                     Udemy
-                  </div>
-                  <div class="divider divider_indigo"></div>
-                  <div class="education__title">
-                     <a href="https://app.rs.school/cv/belokurovaa" class="side__link">"JS/FE Pre-School 2022 in process"</a>
-                  </div>
+                  <div class="divider_divider_indigo"></div>
+                  <ul class="education-list">
+                     <li class="education-list-item">Kyiv State National University</li>
+                     <li class="education-list-item">Udemy "Полный курс по JavaScript + React - с нуля до результата"
+                        Created by Иван Петриченко</li>
+                     <li class="education-list-item">"JS/FE Pre-School 2022 in process"</li>
+                  </ul>
                </section>
-               <section class="skills" id="skills">
+
+               <section class="skills-selection" id="skills-selection">
                   <h3 class="section-title">
                      Skills
                   </h3>
-                  <div class="divider divider_indigo"></div>
-                  <ul class="skills__list">
+                  <div class="divider_divider_indigo"></div>
+                  <ul class="skills-list">
                      <li class="skills__item skills__html">HTML</li>
                      <li class="skills__item skills__css">CSS</li>
                      <li class="skills__item skills__github">GitHub</li>
                      <li class="skills__item skills__figma">Figma</li>
+                     <li class="skills__item skills__figma">Adobe Photoshop</li>
+                     <li class="skills__item skills__figma">InDesign</li>
                   </ul>
                </section>
             </aside>
@@ -93,7 +119,7 @@
                   <h3 class="section-title">
                      About me
                   </h3>
-                  <div class="divider divider_indigo"></div>
+
                   <div class="main__descr">
                      I'm a switcher. My dream is to become a front-end developer. I hope it will come true with RS
                      School's help.
@@ -102,6 +128,7 @@
                      <h4 class="main__subheader">
                         My strengths:
                      </h4>
+
                      <ul class="main__list">
                         <li class="main__item">Perseverance</li>
                         <li class="main__item">Analitic mind</li>
@@ -119,33 +146,36 @@
                      </ul>
                   </article>
 
-               </section>
-               <section class="code-example" id="code">
-                  <h3 class="section-title">
-                     Code example
-                  </h3>
-                  <div class="divider divider_black"></div>
-                  <pre class="pre">
-                      <code class="code">
-         function calculateWork() {
+                  <section class="main__expirience" id="experience">
+                     <h4 class="main__subheader">
+                        Experience:
+                     </h4>
 
+                     <div class="main__descr">
+                        2015-2022 Client Service and Support Specialist
+                     </div>
+
+                  </section>
+                  <section class="code-example" id="code">
+                     <h4 class="main__subheader">
+                        Code example:
+                     </h4>
+                     <pre class="pre">
+                      <code class="code">
+            function calculateWork() {
             const values = getFormValues();
-         
             let totalPrice = 0;
-            
             const workTypes = prices[values.websiteType];
-         
             if (values.session) {
-                  totalPrice = workTypes.session;
+            totalPrice = workTypes.session;
             }
             const totalPriceEl = document.querySelector('#total-Price');
-
             totalPriceEl.textContent = totalPrice; 
          }        
   
                       </code>
                   </pre>
-               </section>
+                  </section>
 
             </main>
          </div>
@@ -153,38 +183,21 @@
    </div>
    <footer class="footer">
       <div class="container">
-         <div class="footer__container">
-            <section class="contacts" id="contacts">
-               <h3 class="section-title">
-                  Contacts
-               </h3>
-               <div class="divider divider_indigo"></div>
-               <ul class="contacts__list">
-                  <li class="contacts__item">
-                     <a href="tel:+375299879647" class="side__link" target="_blank">+380509380305</a>
-                  </li>
-                  <li class="contacts__item">
-                     <a href="mailto:belokurovaa@gmail.com" class="side__link" target="_blank">E-mail</a>
-                  </li>
-                  <li class="contacts__item">
-                     <a href="https://t.me/olena_belokurova" class="side__link" target="_blank">Telegram</a>
-                  </li>
-               </ul>
-            </section>
-            <div class="footer__content">
-               <div class="footer__item">
-                  <a href="https://github.com/belokurovaa" target="_blank">2022
-                     <img src="assets/svg/github.svg" alt="github_icon" class="footer__image">
-                  </a>
-               </div>
-               <div class="footer__item">
-                  <a href="https://rs.school/js/" target="_blank">
-                     <img src="assets/svg/rs_school_js.svg" alt="rs-school-logo" class="footer__image">
-                  </a>
-               </div>
-
+         <div class="divider_divider_indigo"></div>
+         <div class="footer-content">
+            <div class="footer-item-git">
+               <a href="https://github.com/belokurovaa" target="_blank">2022
+                  <img src="assets/svg/github.svg" alt="github_icon" class="footer__image">
+               </a>
             </div>
+            <div class="footer-item-rss">
+               <a href="https://rs.school/js/" target="_blank">
+                  <img src="assets/svg/rs_school_js.svg" alt="rs-school-logo" class="footer__image">
+               </a>
+            </div>
+
          </div>
+      </div>
       </div>
    </footer>
 </body>
